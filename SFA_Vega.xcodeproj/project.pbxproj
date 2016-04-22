@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032477291C9C34E6007C517C /* Exchenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032477271C9C34E6007C517C /* Exchenge.storyboard */; };
+		032A39DD1C7F58D50010532E /* SalesFromBonuseViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A39DC1C7F58D50010532E /* SalesFromBonuseViewTable.swift */; };
+		037873A71C7F3A5800D9A581 /* CellForSalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037873A61C7F3A5800D9A581 /* CellForSalesTableViewCell.swift */; };
+		039A02F51C23F75A0012C2FC /* NVPSweetFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A02F41C23F75A0012C2FC /* NVPSweetFTP.swift */; };
+		039D98F31C7F5F0400C53AB5 /* SalesForBonuseDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A39DE1C7F58E00010532E /* SalesForBonuseDocument.swift */; };
+		039D98F51C7F5F6600C53AB5 /* NVPSalesForBonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A832351C7EFC8D001512F2 /* NVPSalesForBonus.swift */; };
+		039D98F81C80387900C53AB5 /* Bonuse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039D98F61C80387800C53AB5 /* Bonuse.storyboard */; };
+		03A8323B1C7EFC8D001512F2 /* NVPSectionSalesForBonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A832371C7EFC8D001512F2 /* NVPSectionSalesForBonus.swift */; };
+		3208E7BC1B8F2D2C00A95A77 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3208E7BB1B8F2D2C00A95A77 /* Settings.bundle */; };
+		3220D5451B552D8E00D0C259 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220D5441B552D8E00D0C259 /* Extensions.swift */; };
+		324F54141B43E131007AA0FF /* NVPSectionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F54131B43E131007AA0FF /* NVPSectionOrder.swift */; };
+		3262EBD01B3D9B800044AEA9 /* NVPSectionInvet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262EBCF1B3D9B800044AEA9 /* NVPSectionInvet.swift */; };
+		3274B4E21B3D705300D42E40 /* CellForOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B4E11B3D705300D42E40 /* CellForOrderTableViewCell.swift */; };
+		3274B4E41B3D751400D42E40 /* TableFillResidue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B4E31B3D751400D42E40 /* TableFillResidue.swift */; };
+		3274B4E61B3D7D6A00D42E40 /* ResidueTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B4E51B3D7D6A00D42E40 /* ResidueTableView.swift */; };
+		3288C8151B3A9CE400043160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C8141B3A9CE400043160 /* AppDelegate.swift */; };
+		3288C81A1B3A9CE400043160 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C8191B3A9CE400043160 /* MasterViewController.swift */; };
+		3288C81F1B3A9CE400043160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3288C81D1B3A9CE400043160 /* Main.storyboard */; };
+		3288C8211B3A9CE400043160 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3288C8201B3A9CE400043160 /* Images.xcassets */; };
+		3288C8241B3A9CE500043160 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3288C8221B3A9CE500043160 /* LaunchScreen.xib */; };
+		3288C8301B3A9CE500043160 /* SFA_VegaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C82F1B3A9CE500043160 /* SFA_VegaTests.swift */; };
+		3288C86F1B3AC55500043160 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C86E1B3AC55500043160 /* Parse.swift */; };
+		3288C8711B3ACB7600043160 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C8701B3ACB7600043160 /* SettingsVC.swift */; };
+		3296C4B11BC6A06C00C653D6 /* WriteArhiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3296C4B01BC6A06C00C653D6 /* WriteArhiv.swift */; };
+		3296C4B31BC7EBC400C653D6 /* ParseInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3296C4B21BC7EBC400C653D6 /* ParseInventory.swift */; };
+		32A96B231B452BA600620CE3 /* NVPProductGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A96B221B452BA600620CE3 /* NVPProductGroup.swift */; };
+		32A96B251B452BA700620CE3 /* NVPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A96B241B452BA700620CE3 /* NVPProduct.swift */; };
+		32A96B291B4556CF00620CE3 /* CellForOrderTableViewCellPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A96B281B4556CF00620CE3 /* CellForOrderTableViewCellPrice.swift */; };
+		32A96B2D1B4574BB00620CE3 /* GetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A96B2C1B4574BB00620CE3 /* GetLocation.swift */; };
+		32A9A1381B4294F500AA9D2F /* TableFillOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9A1371B4294F500AA9D2F /* TableFillOrder.swift */; };
+		32A9A13A1B42B82B00AA9D2F /* CellForInventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9A1391B42B82B00AA9D2F /* CellForInventoryTableViewCell.swift */; };
+		32B3ABB51B3BD71700204323 /* NVPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3ABB41B3BD71700204323 /* NVPClient.swift */; };
+		32B3ABB91B3BD71700204323 /* NVPResiduesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3ABB81B3BD71700204323 /* NVPResiduesCategory.swift */; };
+		32B3ABBD1B3BE4B700204323 /* OutletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3ABBC1B3BE4B700204323 /* OutletsViewController.swift */; };
+		32B3ABBF1B3BF15A00204323 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3ABBE1B3BF15A00204323 /* ProductsViewController.swift */; };
+		32BB0D701BA992860097B38E /* CellTotalOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB0D6F1BA992860097B38E /* CellTotalOrder.swift */; };
+		32C03E011B53B3E900762A2A /* TableResidue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C03E001B53B3E900762A2A /* TableResidue.swift */; };
+		32C03E031B53CE0000762A2A /* EditTableResidue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C03E021B53CE0000762A2A /* EditTableResidue.swift */; };
+		32C558471BAFF25A0044B9A6 /* NVPVisitPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C558461BAFF25A0044B9A6 /* NVPVisitPhotos.swift */; };
+		32DCD59A1B906039009F6406 /* NVPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCD5971B906039009F6406 /* NVPStore.swift */; };
+		32DCD59C1B906039009F6406 /* NVPPlanVisits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCD5991B906039009F6406 /* NVPPlanVisits.swift */; };
+		32E10D6F1B91E28600DEDFA8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E10D6E1B91E28600DEDFA8 /* PhotosViewController.swift */; };
+		32E10D751B91FBE300DEDFA8 /* WriteFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E10D741B91FBE300DEDFA8 /* WriteFTP.swift */; };
+		32E757011BA70C6800A2D1A6 /* CellForPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E757001BA70C6800A2D1A6 /* CellForPriceTableViewCell.swift */; };
+		32E757031BA70DF700A2D1A6 /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E757021BA70DF700A2D1A6 /* PriceViewController.swift */; };
+		E723D91F1B4BCB3B00E1E478 /* NVPInfoStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723D91E1B4BCB3B00E1E478 /* NVPInfoStory.swift */; };
+		E723D9231B4BCBD100E1E478 /* InfoForStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723D9221B4BCBD100E1E478 /* InfoForStoryViewController.swift */; };
+		E723D9251B4BF27200E1E478 /* NVPOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723D9241B4BF27200E1E478 /* NVPOrder.swift */; };
+		E723D9271B4BF76200E1E478 /* FreeViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723D9261B4BF76200E1E478 /* FreeViewTable.swift */; };
+		E723D93B1B4E8AEF00E1E478 /* WriteXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723D93A1B4E8AEF00E1E478 /* WriteXML.swift */; };
+		E747B5F91B57D4DA00585606 /* NVPCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E747B5F71B57D4DA00585606 /* NVPCategory.swift */; };
+		E747B5FA1B57D4DA00585606 /* NVPInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E747B5F81B57D4DA00585606 /* NVPInventory.swift */; };
+		E74D19951B5FD70500DD762A /* ParseConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D19941B5FD70500DD762A /* ParseConfirmation.swift */; };
+		E75E0A391B923872006F2E78 /* SFA_Vega.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E75E0A371B923872006F2E78 /* SFA_Vega.xcdatamodeld */; };
+		E7B755061B4ACF540066F41D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B755051B4ACF540066F41D /* MapView.swift */; };
+		E7B755081B4ACF880066F41D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B755071B4ACF880066F41D /* MapKit.framework */; };
+		E7B7550A1B4AD1540066F41D /* NVPAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B755091B4AD1540066F41D /* NVPAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3288C82A1B3A9CE500043160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3288C8071B3A9CE400043160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3288C80E1B3A9CE400043160;
+			remoteInfo = SFA_Vega;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031A3A371C218D5D00B57239 /* SFA_Vega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFA_Vega.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		031A3A381C218D5D00B57239 /* SFA_VegaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFA_VegaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		031A3A391C21904E00B57239 /* SFA_Vega4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFA_Vega4.xcdatamodel; sourceTree = "<group>"; };
+		032477281C9C34E6007C517C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Exchenge.storyboard; sourceTree = "<group>"; };
+		032A39DC1C7F58D50010532E /* SalesFromBonuseViewTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalesFromBonuseViewTable.swift; path = SFA_Vega/SalesFromBonuseViewTable.swift; sourceTree = SOURCE_ROOT; };
+		032A39DE1C7F58E00010532E /* SalesForBonuseDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalesForBonuseDocument.swift; path = SFA_Vega/SalesForBonuseDocument.swift; sourceTree = SOURCE_ROOT; };
+		037873A61C7F3A5800D9A581 /* CellForSalesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForSalesTableViewCell.swift; sourceTree = "<group>"; };
+		039A02F41C23F75A0012C2FC /* NVPSweetFTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPSweetFTP.swift; sourceTree = "<group>"; };
+		039D98F71C80387900C53AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Bonuse.storyboard; sourceTree = "<group>"; };
+		03A832331C7EF3C4001512F2 /* SFA_Vega5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFA_Vega5.xcdatamodel; sourceTree = "<group>"; };
+		03A832351C7EFC8D001512F2 /* NVPSalesForBonus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPSalesForBonus.swift; sourceTree = "<group>"; };
+		03A832371C7EFC8D001512F2 /* NVPSectionSalesForBonus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NVPSectionSalesForBonus.swift; path = ../sfa_vega/NVPSectionSalesForBonus.swift; sourceTree = "<group>"; };
+		3208E7BB1B8F2D2C00A95A77 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3220D5441B552D8E00D0C259 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		32228CBA1BE793C600798F11 /* SFA_Vega3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFA_Vega3.xcdatamodel; sourceTree = "<group>"; };
+		324F54131B43E131007AA0FF /* NVPSectionOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPSectionOrder.swift; sourceTree = "<group>"; };
+		3262EBCF1B3D9B800044AEA9 /* NVPSectionInvet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPSectionInvet.swift; sourceTree = "<group>"; };
+		3274B4E11B3D705300D42E40 /* CellForOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForOrderTableViewCell.swift; sourceTree = "<group>"; };
+		3274B4E31B3D751400D42E40 /* TableFillResidue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFillResidue.swift; sourceTree = "<group>"; };
+		3274B4E51B3D7D6A00D42E40 /* ResidueTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResidueTableView.swift; sourceTree = "<group>"; };
+		3288C8131B3A9CE400043160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3288C8141B3A9CE400043160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3288C8191B3A9CE400043160 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3288C81E1B3A9CE400043160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3288C8201B3A9CE400043160 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3288C8231B3A9CE500043160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3288C82E1B3A9CE500043160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3288C82F1B3A9CE500043160 /* SFA_VegaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFA_VegaTests.swift; sourceTree = "<group>"; };
+		3288C86E1B3AC55500043160 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
+		3288C8701B3ACB7600043160 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		3296C4B01BC6A06C00C653D6 /* WriteArhiv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteArhiv.swift; sourceTree = "<group>"; };
+		3296C4B21BC7EBC400C653D6 /* ParseInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInventory.swift; sourceTree = "<group>"; };
+		32A96B221B452BA600620CE3 /* NVPProductGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPProductGroup.swift; sourceTree = "<group>"; };
+		32A96B241B452BA700620CE3 /* NVPProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPProduct.swift; sourceTree = "<group>"; };
+		32A96B281B4556CF00620CE3 /* CellForOrderTableViewCellPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForOrderTableViewCellPrice.swift; sourceTree = "<group>"; };
+		32A96B2C1B4574BB00620CE3 /* GetLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLocation.swift; sourceTree = "<group>"; };
+		32A9A1371B4294F500AA9D2F /* TableFillOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFillOrder.swift; sourceTree = "<group>"; };
+		32A9A1391B42B82B00AA9D2F /* CellForInventoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForInventoryTableViewCell.swift; sourceTree = "<group>"; };
+		32B3ABB41B3BD71700204323 /* NVPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPClient.swift; sourceTree = "<group>"; };
+		32B3ABB81B3BD71700204323 /* NVPResiduesCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPResiduesCategory.swift; sourceTree = "<group>"; };
+		32B3ABBC1B3BE4B700204323 /* OutletsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutletsViewController.swift; sourceTree = "<group>"; };
+		32B3ABBE1B3BF15A00204323 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		32BB0D6F1BA992860097B38E /* CellTotalOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTotalOrder.swift; sourceTree = "<group>"; };
+		32C03E001B53B3E900762A2A /* TableResidue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableResidue.swift; sourceTree = "<group>"; };
+		32C03E021B53CE0000762A2A /* EditTableResidue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableResidue.swift; sourceTree = "<group>"; };
+		32C558461BAFF25A0044B9A6 /* NVPVisitPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPVisitPhotos.swift; sourceTree = "<group>"; };
+		32DCD5971B906039009F6406 /* NVPStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPStore.swift; sourceTree = "<group>"; };
+		32DCD5991B906039009F6406 /* NVPPlanVisits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPPlanVisits.swift; sourceTree = "<group>"; };
+		32E10D6E1B91E28600DEDFA8 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		32E10D741B91FBE300DEDFA8 /* WriteFTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteFTP.swift; sourceTree = "<group>"; };
+		32E757001BA70C6800A2D1A6 /* CellForPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellForPriceTableViewCell.swift; sourceTree = "<group>"; };
+		32E757021BA70DF700A2D1A6 /* PriceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
+		32F262231BA304CC005CD4D2 /* SFA_Vega2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFA_Vega2.xcdatamodel; sourceTree = "<group>"; };
+		E723D91E1B4BCB3B00E1E478 /* NVPInfoStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPInfoStory.swift; sourceTree = "<group>"; };
+		E723D9221B4BCBD100E1E478 /* InfoForStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoForStoryViewController.swift; sourceTree = "<group>"; };
+		E723D9241B4BF27200E1E478 /* NVPOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPOrder.swift; sourceTree = "<group>"; };
+		E723D9261B4BF76200E1E478 /* FreeViewTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeViewTable.swift; sourceTree = "<group>"; };
+		E723D93A1B4E8AEF00E1E478 /* WriteXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteXML.swift; sourceTree = "<group>"; };
+		E747B5F71B57D4DA00585606 /* NVPCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPCategory.swift; sourceTree = "<group>"; };
+		E747B5F81B57D4DA00585606 /* NVPInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPInventory.swift; sourceTree = "<group>"; };
+		E74D19941B5FD70500DD762A /* ParseConfirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseConfirmation.swift; sourceTree = "<group>"; };
+		E75E0A381B923872006F2E78 /* SFA_Vega.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFA_Vega.xcdatamodel; sourceTree = "<group>"; };
+		E7B755051B4ACF540066F41D /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E7B755071B4ACF880066F41D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E7B755091B4AD1540066F41D /* NVPAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVPAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3288C80C1B3A9CE400043160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B755081B4ACF880066F41D /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3288C8261B3A9CE500043160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3274B4D81B3D2C9400D42E40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3288C8201B3A9CE400043160 /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3288C8061B3A9CE400043160 = {
+			isa = PBXGroup;
+			children = (
+				E7B755071B4ACF880066F41D /* MapKit.framework */,
+				3288C8111B3A9CE400043160 /* SFA_Vega */,
+				3288C82C1B3A9CE500043160 /* SFA_VegaTests */,
+				031A3A371C218D5D00B57239 /* SFA_Vega.app */,
+				031A3A381C218D5D00B57239 /* SFA_VegaTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		3288C8111B3A9CE400043160 /* SFA_Vega */ = {
+			isa = PBXGroup;
+			children = (
+				E723D91C1B4BB37000E1E478 /* Views */,
+				3274B4D81B3D2C9400D42E40 /* Images */,
+				3288C86D1B3AC53700043160 /* Helper */,
+				3288C86C1B3AB18D00043160 /* Model */,
+				3288C8141B3A9CE400043160 /* AppDelegate.swift */,
+				3288C8221B3A9CE500043160 /* LaunchScreen.xib */,
+				3288C8121B3A9CE400043160 /* Supporting Files */,
+			);
+			path = SFA_Vega;
+			sourceTree = "<group>";
+		};
+		3288C8121B3A9CE400043160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3288C8131B3A9CE400043160 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3288C82C1B3A9CE500043160 /* SFA_VegaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3288C82F1B3A9CE500043160 /* SFA_VegaTests.swift */,
+				3288C82D1B3A9CE500043160 /* Supporting Files */,
+			);
+			path = SFA_VegaTests;
+			sourceTree = "<group>";
+		};
+		3288C82D1B3A9CE500043160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3288C82E1B3A9CE500043160 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3288C86C1B3AB18D00043160 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E75E0A371B923872006F2E78 /* SFA_Vega.xcdatamodeld */,
+				03A832351C7EFC8D001512F2 /* NVPSalesForBonus.swift */,
+				03A832371C7EFC8D001512F2 /* NVPSectionSalesForBonus.swift */,
+				E747B5F71B57D4DA00585606 /* NVPCategory.swift */,
+				32C558461BAFF25A0044B9A6 /* NVPVisitPhotos.swift */,
+				32A96B241B452BA700620CE3 /* NVPProduct.swift */,
+				32A96B221B452BA600620CE3 /* NVPProductGroup.swift */,
+				E723D91E1B4BCB3B00E1E478 /* NVPInfoStory.swift */,
+				324F54131B43E131007AA0FF /* NVPSectionOrder.swift */,
+				32DCD5971B906039009F6406 /* NVPStore.swift */,
+				32DCD5991B906039009F6406 /* NVPPlanVisits.swift */,
+				E747B5F81B57D4DA00585606 /* NVPInventory.swift */,
+				E723D9241B4BF27200E1E478 /* NVPOrder.swift */,
+				3262EBCF1B3D9B800044AEA9 /* NVPSectionInvet.swift */,
+				32B3ABB81B3BD71700204323 /* NVPResiduesCategory.swift */,
+				32B3ABB41B3BD71700204323 /* NVPClient.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3288C86D1B3AC53700043160 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				039A02F41C23F75A0012C2FC /* NVPSweetFTP.swift */,
+				E7B755091B4AD1540066F41D /* NVPAnnotation.swift */,
+				32A96B2C1B4574BB00620CE3 /* GetLocation.swift */,
+				3288C86E1B3AC55500043160 /* Parse.swift */,
+				E74D19941B5FD70500DD762A /* ParseConfirmation.swift */,
+				3296C4B21BC7EBC400C653D6 /* ParseInventory.swift */,
+				3220D5441B552D8E00D0C259 /* Extensions.swift */,
+				E723D93A1B4E8AEF00E1E478 /* WriteXML.swift */,
+				3296C4B01BC6A06C00C653D6 /* WriteArhiv.swift */,
+				32E10D741B91FBE300DEDFA8 /* WriteFTP.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		E723D91C1B4BB37000E1E478 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E723D91D1B4BB3A800E1E478 /* cells */,
+				3288C8191B3A9CE400043160 /* MasterViewController.swift */,
+				032A39DC1C7F58D50010532E /* SalesFromBonuseViewTable.swift */,
+				032A39DE1C7F58E00010532E /* SalesForBonuseDocument.swift */,
+				E723D9261B4BF76200E1E478 /* FreeViewTable.swift */,
+				32B3ABBC1B3BE4B700204323 /* OutletsViewController.swift */,
+				E723D9221B4BCBD100E1E478 /* InfoForStoryViewController.swift */,
+				32B3ABBE1B3BF15A00204323 /* ProductsViewController.swift */,
+				32E757021BA70DF700A2D1A6 /* PriceViewController.swift */,
+				E7B755051B4ACF540066F41D /* MapView.swift */,
+				3274B4E51B3D7D6A00D42E40 /* ResidueTableView.swift */,
+				32C03E001B53B3E900762A2A /* TableResidue.swift */,
+				3274B4E31B3D751400D42E40 /* TableFillResidue.swift */,
+				32A9A1371B4294F500AA9D2F /* TableFillOrder.swift */,
+				3288C8701B3ACB7600043160 /* SettingsVC.swift */,
+				32C03E021B53CE0000762A2A /* EditTableResidue.swift */,
+				3288C81D1B3A9CE400043160 /* Main.storyboard */,
+				032477271C9C34E6007C517C /* Exchenge.storyboard */,
+				039D98F61C80387800C53AB5 /* Bonuse.storyboard */,
+				32E10D6E1B91E28600DEDFA8 /* PhotosViewController.swift */,
+				3208E7BB1B8F2D2C00A95A77 /* Settings.bundle */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E723D91D1B4BB3A800E1E478 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				3274B4E11B3D705300D42E40 /* CellForOrderTableViewCell.swift */,
+				32BB0D6F1BA992860097B38E /* CellTotalOrder.swift */,
+				32E757001BA70C6800A2D1A6 /* CellForPriceTableViewCell.swift */,
+				037873A61C7F3A5800D9A581 /* CellForSalesTableViewCell.swift */,
+				32A96B281B4556CF00620CE3 /* CellForOrderTableViewCellPrice.swift */,
+				32A9A1391B42B82B00AA9D2F /* CellForInventoryTableViewCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3288C80E1B3A9CE400043160 /* SFA_Vega */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3288C8331B3A9CE500043160 /* Build configuration list for PBXNativeTarget "SFA_Vega" */;
+			buildPhases = (
+				3288C80B1B3A9CE400043160 /* Sources */,
+				3288C80C1B3A9CE400043160 /* Frameworks */,
+				3288C80D1B3A9CE400043160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFA_Vega;
+			productName = SFA_Vega;
+			productReference = 031A3A371C218D5D00B57239 /* SFA_Vega.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3288C8281B3A9CE500043160 /* SFA_VegaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3288C8361B3A9CE500043160 /* Build configuration list for PBXNativeTarget "SFA_VegaTests" */;
+			buildPhases = (
+				3288C8251B3A9CE500043160 /* Sources */,
+				3288C8261B3A9CE500043160 /* Frameworks */,
+				3288C8271B3A9CE500043160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3288C82B1B3A9CE500043160 /* PBXTargetDependency */,
+			);
+			name = SFA_VegaTests;
+			productName = SFA_VegaTests;
+			productReference = 031A3A381C218D5D00B57239 /* SFA_VegaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3288C8071B3A9CE400043160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Nevinniy Vladimir";
+				TargetAttributes = {
+					3288C80E1B3A9CE400043160 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = ML92WQMC99;
+					};
+					3288C8281B3A9CE500043160 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 3288C80E1B3A9CE400043160;
+					};
+				};
+			};
+			buildConfigurationList = 3288C80A1B3A9CE400043160 /* Build configuration list for PBXProject "SFA_Vega" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3288C8061B3A9CE400043160;
+			productRefGroup = 3288C8061B3A9CE400043160;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3288C80E1B3A9CE400043160 /* SFA_Vega */,
+				3288C8281B3A9CE500043160 /* SFA_VegaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3288C80D1B3A9CE400043160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3288C81F1B3A9CE400043160 /* Main.storyboard in Resources */,
+				3208E7BC1B8F2D2C00A95A77 /* Settings.bundle in Resources */,
+				3288C8241B3A9CE500043160 /* LaunchScreen.xib in Resources */,
+				039D98F81C80387900C53AB5 /* Bonuse.storyboard in Resources */,
+				3288C8211B3A9CE400043160 /* Images.xcassets in Resources */,
+				032477291C9C34E6007C517C /* Exchenge.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3288C8271B3A9CE500043160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3288C80B1B3A9CE400043160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039D98F51C7F5F6600C53AB5 /* NVPSalesForBonus.swift in Sources */,
+				039D98F31C7F5F0400C53AB5 /* SalesForBonuseDocument.swift in Sources */,
+				32B3ABBD1B3BE4B700204323 /* OutletsViewController.swift in Sources */,
+				32E757031BA70DF700A2D1A6 /* PriceViewController.swift in Sources */,
+				E723D91F1B4BCB3B00E1E478 /* NVPInfoStory.swift in Sources */,
+				32A96B251B452BA700620CE3 /* NVPProduct.swift in Sources */,
+				E723D93B1B4E8AEF00E1E478 /* WriteXML.swift in Sources */,
+				32A96B291B4556CF00620CE3 /* CellForOrderTableViewCellPrice.swift in Sources */,
+				E75E0A391B923872006F2E78 /* SFA_Vega.xcdatamodeld in Sources */,
+				32C03E011B53B3E900762A2A /* TableResidue.swift in Sources */,
+				32B3ABBF1B3BF15A00204323 /* ProductsViewController.swift in Sources */,
+				32C558471BAFF25A0044B9A6 /* NVPVisitPhotos.swift in Sources */,
+				E723D9251B4BF27200E1E478 /* NVPOrder.swift in Sources */,
+				E7B755061B4ACF540066F41D /* MapView.swift in Sources */,
+				3296C4B31BC7EBC400C653D6 /* ParseInventory.swift in Sources */,
+				E723D9231B4BCBD100E1E478 /* InfoForStoryViewController.swift in Sources */,
+				3296C4B11BC6A06C00C653D6 /* WriteArhiv.swift in Sources */,
+				32A9A13A1B42B82B00AA9D2F /* CellForInventoryTableViewCell.swift in Sources */,
+				3288C86F1B3AC55500043160 /* Parse.swift in Sources */,
+				3274B4E61B3D7D6A00D42E40 /* ResidueTableView.swift in Sources */,
+				32C03E031B53CE0000762A2A /* EditTableResidue.swift in Sources */,
+				32B3ABB91B3BD71700204323 /* NVPResiduesCategory.swift in Sources */,
+				037873A71C7F3A5800D9A581 /* CellForSalesTableViewCell.swift in Sources */,
+				32A9A1381B4294F500AA9D2F /* TableFillOrder.swift in Sources */,
+				E74D19951B5FD70500DD762A /* ParseConfirmation.swift in Sources */,
+				03A8323B1C7EFC8D001512F2 /* NVPSectionSalesForBonus.swift in Sources */,
+				3288C8151B3A9CE400043160 /* AppDelegate.swift in Sources */,
+				32B3ABB51B3BD71700204323 /* NVPClient.swift in Sources */,
+				E7B7550A1B4AD1540066F41D /* NVPAnnotation.swift in Sources */,
+				32A96B231B452BA600620CE3 /* NVPProductGroup.swift in Sources */,
+				039A02F51C23F75A0012C2FC /* NVPSweetFTP.swift in Sources */,
+				32E10D751B91FBE300DEDFA8 /* WriteFTP.swift in Sources */,
+				3288C81A1B3A9CE400043160 /* MasterViewController.swift in Sources */,
+				E723D9271B4BF76200E1E478 /* FreeViewTable.swift in Sources */,
+				3262EBD01B3D9B800044AEA9 /* NVPSectionInvet.swift in Sources */,
+				3288C8711B3ACB7600043160 /* SettingsVC.swift in Sources */,
+				32E10D6F1B91E28600DEDFA8 /* PhotosViewController.swift in Sources */,
+				032A39DD1C7F58D50010532E /* SalesFromBonuseViewTable.swift in Sources */,
+				3274B4E21B3D705300D42E40 /* CellForOrderTableViewCell.swift in Sources */,
+				3274B4E41B3D751400D42E40 /* TableFillResidue.swift in Sources */,
+				324F54141B43E131007AA0FF /* NVPSectionOrder.swift in Sources */,
+				32BB0D701BA992860097B38E /* CellTotalOrder.swift in Sources */,
+				32DCD59A1B906039009F6406 /* NVPStore.swift in Sources */,
+				E747B5FA1B57D4DA00585606 /* NVPInventory.swift in Sources */,
+				3220D5451B552D8E00D0C259 /* Extensions.swift in Sources */,
+				E747B5F91B57D4DA00585606 /* NVPCategory.swift in Sources */,
+				32E757011BA70C6800A2D1A6 /* CellForPriceTableViewCell.swift in Sources */,
+				32A96B2D1B4574BB00620CE3 /* GetLocation.swift in Sources */,
+				32DCD59C1B906039009F6406 /* NVPPlanVisits.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3288C8251B3A9CE500043160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3288C8301B3A9CE500043160 /* SFA_VegaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3288C82B1B3A9CE500043160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3288C80E1B3A9CE400043160 /* SFA_Vega */;
+			targetProxy = 3288C82A1B3A9CE500043160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		032477271C9C34E6007C517C /* Exchenge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032477281C9C34E6007C517C /* Base */,
+			);
+			name = Exchenge.storyboard;
+			sourceTree = "<group>";
+		};
+		039D98F61C80387800C53AB5 /* Bonuse.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				039D98F71C80387900C53AB5 /* Base */,
+			);
+			name = Bonuse.storyboard;
+			sourceTree = "<group>";
+		};
+		3288C81D1B3A9CE400043160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3288C81E1B3A9CE400043160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3288C8221B3A9CE500043160 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3288C8231B3A9CE500043160 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3288C8311B3A9CE500043160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3288C8321B3A9CE500043160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3288C8341B3A9CE500043160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SFA_Vega/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nvovap.com.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3288C8351B3A9CE500043160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SFA_Vega/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nvovap.com.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3288C8371B3A9CE500043160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SFA_VegaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nvovap.com.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFA_Vega.app/SFA_Vega";
+			};
+			name = Debug;
+		};
+		3288C8381B3A9CE500043160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SFA_VegaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nvovap.com.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFA_Vega.app/SFA_Vega";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3288C80A1B3A9CE400043160 /* Build configuration list for PBXProject "SFA_Vega" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3288C8311B3A9CE500043160 /* Debug */,
+				3288C8321B3A9CE500043160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3288C8331B3A9CE500043160 /* Build configuration list for PBXNativeTarget "SFA_Vega" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3288C8341B3A9CE500043160 /* Debug */,
+				3288C8351B3A9CE500043160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3288C8361B3A9CE500043160 /* Build configuration list for PBXNativeTarget "SFA_VegaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3288C8371B3A9CE500043160 /* Debug */,
+				3288C8381B3A9CE500043160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E75E0A371B923872006F2E78 /* SFA_Vega.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03A832331C7EF3C4001512F2 /* SFA_Vega5.xcdatamodel */,
+				031A3A391C21904E00B57239 /* SFA_Vega4.xcdatamodel */,
+				32228CBA1BE793C600798F11 /* SFA_Vega3.xcdatamodel */,
+				32F262231BA304CC005CD4D2 /* SFA_Vega2.xcdatamodel */,
+				E75E0A381B923872006F2E78 /* SFA_Vega.xcdatamodel */,
+			);
+			currentVersion = 03A832331C7EF3C4001512F2 /* SFA_Vega5.xcdatamodel */;
+			path = SFA_Vega.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3288C8071B3A9CE400043160 /* Project object */;
+}

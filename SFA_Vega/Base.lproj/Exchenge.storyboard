@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MMG-e4-txg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Обмен-->
+        <scene sceneID="ugy-a1-Mps">
+            <objects>
+                <viewController id="MMG-e4-txg" customClass="SettingsVC" customModule="SFA_Vega" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k4W-Vw-u7j"/>
+                        <viewControllerLayoutGuide type="bottom" id="LIh-Yr-BXN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9jW-vE-T9T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTh-si-spC">
+                                <rect key="frame" x="266" y="50" width="68" height="30"/>
+                                <state key="normal" title="Получить">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onGetData:" destination="MMG-e4-txg" eventType="touchUpInside" id="lmw-5O-X3H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5W-cL-JdO">
+                                <rect key="frame" x="240" y="200" width="130" height="30"/>
+                                <state key="normal" title="Отправить заказы">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMassage:" destination="MMG-e4-txg" eventType="touchUpInside" id="0T7-I8-OM4"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-dK-8Kq">
+                                <rect key="frame" x="25" y="503" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="FZp-Sj-yzq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-t5-5RC">
+                                <rect key="frame" x="534" y="498" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="OcF-pf-hXD"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveUser" destination="MMG-e4-txg" eventType="touchUpInside" id="wqA-Yq-tnL"/>
+                                </connections>
+                            </button>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lE6-Qb-sEI">
+                                <rect key="frame" x="75" y="499" width="456" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MMG-e4-txg" id="fKo-BR-WaG"/>
+                                </connections>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-Jo-jXJ">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SRH-t5-5RC" firstAttribute="leading" secondItem="lE6-Qb-sEI" secondAttribute="trailing" constant="3" id="0ux-yR-bLE"/>
+                            <constraint firstAttribute="centerX" secondItem="J5W-cL-JdO" secondAttribute="centerX" constant="-5" id="2gS-kO-tZ1"/>
+                            <constraint firstItem="J5W-cL-JdO" firstAttribute="top" secondItem="dTh-si-spC" secondAttribute="bottom" constant="120" id="Cv8-PP-VWg"/>
+                            <constraint firstItem="SRH-t5-5RC" firstAttribute="trailing" secondItem="9jW-vE-T9T" secondAttribute="trailingMargin" id="HMn-BM-1HJ"/>
+                            <constraint firstAttribute="centerX" secondItem="dTh-si-spC" secondAttribute="centerX" id="MTS-UW-0aZ"/>
+                            <constraint firstAttribute="centerX" secondItem="W2c-Jo-jXJ" secondAttribute="centerX" id="UM2-hH-bDL"/>
+                            <constraint firstItem="LIh-Yr-BXN" firstAttribute="top" secondItem="lE6-Qb-sEI" secondAttribute="bottom" constant="22" id="cZT-O2-B5S"/>
+                            <constraint firstItem="LIh-Yr-BXN" firstAttribute="top" secondItem="SRH-t5-5RC" secondAttribute="bottom" constant="23" id="eSy-iY-0U4"/>
+                            <constraint firstItem="lE6-Qb-sEI" firstAttribute="leading" secondItem="iSC-dK-8Kq" secondAttribute="trailing" constant="8" id="en0-Z0-Dv0"/>
+                            <constraint firstItem="LIh-Yr-BXN" firstAttribute="top" secondItem="iSC-dK-8Kq" secondAttribute="bottom" constant="27" id="ey3-jb-YoH"/>
+                            <constraint firstAttribute="centerY" secondItem="W2c-Jo-jXJ" secondAttribute="centerY" id="oUT-pZ-J54"/>
+                            <constraint firstItem="iSC-dK-8Kq" firstAttribute="leading" secondItem="9jW-vE-T9T" secondAttribute="leadingMargin" constant="5" id="sY3-6c-fbj"/>
+                            <constraint firstItem="dTh-si-spC" firstAttribute="top" secondItem="k4W-Vw-u7j" secondAttribute="bottom" constant="30" id="vis-Vt-yof"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Обмен" image="exchange" id="YWJ-jN-Xcu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonGetMessage" destination="dTh-si-spC" id="c4U-kt-JHj"/>
+                        <outlet property="buttonSendMassage" destination="J5W-cL-JdO" id="hqs-1T-xwU"/>
+                        <outlet property="labelUser" destination="iSC-dK-8Kq" id="XhM-m9-seU"/>
+                        <outlet property="layoutLabelUser" destination="ey3-jb-YoH" id="wp7-eO-UU7"/>
+                        <outlet property="layoutSaveUserButton" destination="eSy-iY-0U4" id="5gL-9s-svn"/>
+                        <outlet property="layoutUserText" destination="cZT-O2-B5S" id="cbY-zH-Rxl"/>
+                        <outlet property="saveUserButton" destination="SRH-t5-5RC" id="QE6-oR-cUb"/>
+                        <outlet property="spinner" destination="W2c-Jo-jXJ" id="z9M-If-LpY"/>
+                        <outlet property="userText" destination="lE6-Qb-sEI" id="m0D-71-nEV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROz-gG-ZSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="exchange" width="30" height="30"/>
+    </resources>
+</document>

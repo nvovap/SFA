@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Category" representedClassName="NVPCategory" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="outlets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Store" inverseName="category" inverseEntity="Store" syncable="YES"/>
+        <relationship name="residues" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ResiduesCategory" inverseName="category" inverseEntity="ResiduesCategory" syncable="YES"/>
+    </entity>
+    <entity name="Client" representedClassName="NVPClient" syncable="YES">
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="fullname" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="okpo" attributeType="String" syncable="YES"/>
+        <attribute name="summa1" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="summa2" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="outlets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Store" inverseName="client" inverseEntity="Store" syncable="YES"/>
+    </entity>
+    <entity name="InfoStore" representedClassName="NVPInfoStory" syncable="YES">
+        <attribute name="info" attributeType="String" syncable="YES"/>
+        <relationship name="store" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="info" inverseEntity="Store" syncable="YES"/>
+    </entity>
+    <entity name="Inventory" representedClassName="NVPInventory" syncable="YES">
+        <attribute name="confirmation" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="distance" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numberDocIn1C" attributeType="String" syncable="YES"/>
+        <attribute name="received" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="sent" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="shipped" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="section" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SectionInvet" inverseName="inventory" inverseEntity="SectionInvet" syncable="YES"/>
+        <relationship name="story" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="inventory" inverseEntity="Store" syncable="YES"/>
+        <relationship name="visitsPhoto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VisitPhotos" inverseName="inventory" inverseEntity="VisitPhotos" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="NVPOrder" syncable="YES">
+        <attribute name="comment" attributeType="String" syncable="YES"/>
+        <attribute name="confirmation" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="free" attributeType="Boolean" syncable="YES"/>
+        <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="idInventory" attributeType="String" defaultValueString="00000000-0000-0000-0000-000000000000" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numberDocIn1C" attributeType="String" syncable="YES"/>
+        <attribute name="payForma2" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="received" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="sent" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="shipped" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="summa" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="section" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SectionOrder" inverseName="order" inverseEntity="SectionOrder" syncable="YES"/>
+        <relationship name="store" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="orders" inverseEntity="Store" syncable="YES"/>
+    </entity>
+    <entity name="PlanVisits" representedClassName="NVPPlanVisits" syncable="YES">
+        <attribute name="dateEnd" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStart" attributeType="Date" syncable="YES"/>
+        <attribute name="idStore" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="NVPProduct" syncable="YES">
+        <attribute name="artikle" attributeType="String" syncable="YES"/>
+        <attribute name="barcode" attributeType="String" syncable="YES"/>
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="contractPrice" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fullname" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="idEd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGroup" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="nds" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="price1" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="price2" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="price3" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="price4" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="products" inverseEntity="ProductGroup" syncable="YES"/>
+    </entity>
+    <entity name="ProductGroup" representedClassName="NVPProductGroup" syncable="YES">
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="fullname" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="idGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="groups" inverseEntity="ProductGroup" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="group" inverseEntity="ProductGroup" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="group" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ResiduesCategory" representedClassName="NVPResiduesCategory" syncable="YES">
+        <attribute name="idProduct" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="residues" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="SectionInvet" representedClassName="NVPSectionInvet" syncable="YES">
+        <attribute name="factResidue" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="idProduct" attributeType="String" syncable="YES"/>
+        <attribute name="nameProduct" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="quantityCategory" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="residue" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="inventory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Inventory" inverseName="section" inverseEntity="Inventory" syncable="YES"/>
+    </entity>
+    <entity name="SectionOrder" representedClassName="NVPSectionOrder" syncable="YES">
+        <attribute name="idProduct" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="orderProduct" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="price" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="quantity" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="residue" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="section" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="Store" representedClassName="NVPStore" syncable="YES">
+        <attribute name="adress" attributeType="String" syncable="YES"/>
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="idClient" attributeType="String" syncable="YES"/>
+        <attribute name="idRTP" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="oblast" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="region" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="outlets" inverseEntity="Category" syncable="YES"/>
+        <relationship name="client" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="outlets" inverseEntity="Client" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InfoStore" inverseName="store" inverseEntity="InfoStore" syncable="YES"/>
+        <relationship name="inventory" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Inventory" inverseName="story" inverseEntity="Inventory" syncable="YES"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Order" inverseName="store" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="VisitPhotos" representedClassName="NVPVisitPhotos" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="namePhoto" attributeType="String" syncable="YES"/>
+        <attribute name="photo" attributeType="String" syncable="YES"/>
+        <attribute name="received" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="sent" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="inventory" maxCount="1" deletionRule="Cascade" destinationEntity="Inventory" inverseName="visitsPhoto" inverseEntity="Inventory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-23132" positionY="-14437" width="128" height="88"/>
+        <element name="Client" positionX="-22743" positionY="-14616" width="128" height="163"/>
+        <element name="InfoStore" positionX="-22734" positionY="-14407" width="128" height="73"/>
+        <element name="Inventory" positionX="-22977" positionY="-14212" width="128" height="253"/>
+        <element name="Order" positionX="-22772" positionY="-14224" width="128" height="298"/>
+        <element name="PlanVisits" positionX="-22772" positionY="-13897" width="128" height="118"/>
+        <element name="Product" positionX="-23186" positionY="-13924" width="128" height="283"/>
+        <element name="ProductGroup" positionX="-22968" positionY="-13905" width="128" height="163"/>
+        <element name="ResiduesCategory" positionX="-23148" positionY="-14578" width="128" height="88"/>
+        <element name="SectionInvet" positionX="-23168" positionY="-14137" width="128" height="148"/>
+        <element name="SectionOrder" positionX="-22563" positionY="-14074" width="128" height="133"/>
+        <element name="Store" positionX="-22932" positionY="-14572" width="128" height="268"/>
+        <element name="VisitPhotos" positionX="-23357" positionY="-14137" width="128" height="178"/>
+    </elements>
+</model>

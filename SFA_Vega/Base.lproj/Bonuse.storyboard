@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uem-Bb-MtR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Бонус-->
+        <scene sceneID="hIl-zy-iCd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uem-Bb-MtR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Бонус" image="Dollar" id="L4U-zS-jSX"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mt0-Xf-nAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="od9-cb-8we" kind="relationship" relationship="rootViewController" id="FY3-6g-L7V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEk-pA-J7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3196" y="230"/>
+        </scene>
+        <!--Бонусы-->
+        <scene sceneID="RsU-DJ-jnq">
+            <objects>
+                <tableViewController id="od9-cb-8we" customClass="SalesFromBonuseViewTable" customModule="SFA_Vega" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y8r-dB-Orv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="R34-Dz-KJH" style="IBUITableViewCellStyleDefault" id="d8w-if-an9">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8w-if-an9" id="VMt-Yd-azm">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R34-Dz-KJH">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8ta-oH-PbC" kind="show" identifier="SelectSales" id="8Dt-yZ-Uzn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="od9-cb-8we" id="BIb-TD-A0l"/>
+                            <outlet property="delegate" destination="od9-cb-8we" id="9ad-kD-vpw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Бонусы" id="ito-Pa-hk5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4qI-g2-4xd">
+                            <connections>
+                                <segue destination="fjZ-8U-mdE" kind="show" identifier="NewSales" id="Jmr-8q-ftI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzI-lM-D25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3959" y="1041"/>
+        </scene>
+        <!--Торговые точки-->
+        <scene sceneID="IDW-KE-Gcn">
+            <objects>
+                <tableViewController id="fjZ-8U-mdE" customClass="OutletsViewController" customModule="SFA_Vega" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="N9l-ye-6DF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="AYJ-av-Abh">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="fjZ-8U-mdE" id="HhE-ol-hXT"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="Cell" textLabel="y6b-Tn-OXO" detailTextLabel="MhW-89-w3O" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="dDT-AE-00e">
+                                <rect key="frame" x="0.0" y="130" width="600" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dDT-AE-00e" id="Zgo-RQ-jUZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="533" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y6b-Tn-OXO">
+                                            <rect key="frame" x="15" y="17" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MhW-89-w3O">
+                                            <rect key="frame" x="15" y="37" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8ta-oH-PbC" kind="show" identifier="SelectSalesForBonuseSegue" id="wZ5-zP-J23">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fjZ-8U-mdE" id="HrK-S7-fey"/>
+                            <outlet property="delegate" destination="fjZ-8U-mdE" id="BLh-GC-VAB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Торговые точки" id="JK0-si-Obr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReM-Un-N6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3244" y="1041"/>
+        </scene>
+        <!--Бонус-->
+        <scene sceneID="coE-W0-GW3">
+            <objects>
+                <tableViewController title="Заказ" id="8ta-oH-PbC" userLabel="Бонус" customClass="SalesForBonuseDocument" customModule="SFA_Vega" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q7b-5H-n25">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="rer-7L-0Pc" customClass="CellForSalesTableViewCell" customModule="SFA_Vega">
+                                <rect key="frame" x="0.0" y="86" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rer-7L-0Pc" id="0lE-Sr-3OJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-XL-oHW">
+                                            <rect key="frame" x="18" y="11" width="464" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Количество" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7b-Y2-Hde">
+                                            <rect key="frame" x="492" y="8" width="100" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="plb-Ah-k42"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="8ta-oH-PbC" id="WRM-ft-98u"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rSc-XL-oHW" firstAttribute="leading" secondItem="0lE-Sr-3OJ" secondAttribute="leadingMargin" constant="10" id="1uK-zs-IQF"/>
+                                        <constraint firstItem="rSc-XL-oHW" firstAttribute="top" secondItem="0lE-Sr-3OJ" secondAttribute="topMargin" constant="3" id="E0B-Gr-n30"/>
+                                        <constraint firstItem="s7b-Y2-Hde" firstAttribute="trailing" secondItem="0lE-Sr-3OJ" secondAttribute="trailingMargin" id="aAo-wQ-GIq"/>
+                                        <constraint firstItem="s7b-Y2-Hde" firstAttribute="leading" secondItem="rSc-XL-oHW" secondAttribute="trailing" constant="10" id="rWr-hE-S0A"/>
+                                        <constraint firstItem="s7b-Y2-Hde" firstAttribute="top" secondItem="0lE-Sr-3OJ" secondAttribute="topMargin" id="uuR-a3-Bov"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="rSc-XL-oHW" id="8LU-Ac-lNs"/>
+                                    <outlet property="quantity" destination="s7b-Y2-Hde" id="juG-sp-ze1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8ta-oH-PbC" id="Brn-cU-Enj"/>
+                            <outlet property="delegate" destination="8ta-oH-PbC" id="mCx-rc-Kdy"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DIN-kl-ktr">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="skF-y8-dn8">
+                            <connections>
+                                <segue destination="Dsf-PN-Ptb" kind="show" identifier="SelectProduct" id="ESd-U1-DUm">
+                                    <nil key="action"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Записать" id="qI8-V3-psL">
+                            <connections>
+                                <segue destination="daP-iq-gfb" kind="unwind" unwindAction="saveSales:" id="eGm-Re-hUY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addButtonItem" destination="skF-y8-dn8" id="VSA-bu-a1s"/>
+                        <outlet property="buttonSave" destination="qI8-V3-psL" id="NYJ-Dl-qKM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74Z-4n-yeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="daP-iq-gfb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-3590" y="1936"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="Ek7-si-9xU">
+            <objects>
+                <tableViewController title="Products" id="Dsf-PN-Ptb" customClass="ProductsViewController" customModule="SFA_Vega" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3Yl-AU-bk9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="K5s-7X-abC">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="Dsf-PN-Ptb" id="o4n-Ry-1N5"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="afd-eG-bFp" style="IBUITableViewCellStyleDefault" id="pxm-DP-IDP">
+                                <rect key="frame" x="0.0" y="130" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pxm-DP-IDP" id="Wdk-cx-k0D">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="afd-eG-bFp">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="XpV-s7-cgr" kind="unwind" unwindAction="selectProduct:" id="003-kZ-Up0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dsf-PN-Ptb" id="XWG-Ac-JyI"/>
+                            <outlet property="delegate" destination="Dsf-PN-Ptb" id="mRK-ek-2JE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4a9-gh-gb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XpV-s7-cgr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-2866" y="1936"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dollar" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Dt-yZ-Uzn"/>
+    </inferredMetricsTieBreakers>
+</document>
